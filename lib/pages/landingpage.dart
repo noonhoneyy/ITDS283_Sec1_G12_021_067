@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:homehero/pages/login_page.dart';
 import 'package:homehero/pages/register_page.dart';
 
 class LandingPage extends StatelessWidget {
@@ -20,7 +21,7 @@ class LandingPage extends StatelessWidget {
               SizedBox(
                 height: screen.height * 0.05,
               ),
-              Container(
+              SizedBox(
                 height: 200,
                 child: Image.asset(
                   'assets/logo.png',
@@ -73,10 +74,10 @@ class LandingPage extends StatelessWidget {
                 height: screen.height * 0.2,
               ),
               Container(
-                padding: EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
                 width: screen.width * 0.9,
                 height: screen.height * 0.3,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(20))),
                 child: Column(
@@ -93,18 +94,18 @@ class LandingPage extends StatelessWidget {
                     ),
                     SizedBox(
                       width: screen.width * 0.7,
-                      child: Divider(
+                      child: const Divider(
                         color: Color(0xFFFFAF65),
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       width: screen.width * 0.8,
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => LandingPage()),
+                                builder: (context) => const LoginPage()),
                           );
                         },
                         style: ElevatedButton.styleFrom(
@@ -119,7 +120,7 @@ class LandingPage extends StatelessWidget {
                     SizedBox(
                       height: screen.height * 0.02,
                     ),
-                    Container(
+                    SizedBox(
                       width: screen.width * 0.8,
                       child: ElevatedButton(
                         onPressed: () {

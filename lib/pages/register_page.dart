@@ -32,23 +32,66 @@ class _RegisterPageState extends State<RegisterPage> {
           height: screen.height,
           decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("assets/background.png"),
-                  fit: BoxFit.cover)),
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Text(
-              "Fuwa Fuwa\nnail cafe",
-              style: GoogleFonts.chewy(
-                  textStyle: const TextStyle(
-                      fontSize: 36,
-                      color: Color(0xFF6C5F57),
-                      decoration: TextDecoration.none)),
-              textAlign: TextAlign.center,
+                  image: AssetImage("assets/bg.png"), fit: BoxFit.cover)),
+          child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+            SizedBox(
+              height: screen.height * 0.05,
             ),
             SizedBox(
-              height: screen.height * 0.025,
+              height: 200,
+              child: Image.asset(
+                'assets/logo.png',
+              ),
             ),
             SizedBox(
-                width: screen.width * 0.8,
+              height: 50,
+              child: Text(
+                "HOMEHERO",
+                style: GoogleFonts.jomhuria(
+                    textStyle: const TextStyle(
+                        height: 0.1,
+                        color: Colors.white,
+                        decoration: TextDecoration.none,
+                        fontSize: 98,
+                        shadows: [
+                      Shadow(
+                          // bottomLeft
+                          offset: Offset(-1.5, -1.5),
+                          color: Colors.black),
+                      Shadow(
+                          // bottomRight
+                          offset: Offset(1.5, -1.5),
+                          color: Colors.black),
+                      Shadow(
+                          // topRight
+                          offset: Offset(1.5, 1.5),
+                          color: Colors.black),
+                      Shadow(
+                          // topLeft
+                          offset: Offset(-1.5, 1.5),
+                          color: Colors.black),
+                    ])),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            SizedBox(
+              child: Text(
+                "Clean homes, fresh lives with HomeHero",
+                style: GoogleFonts.jomhuria(
+                    textStyle: const TextStyle(
+                        height: 0,
+                        color: Colors.white,
+                        decoration: TextDecoration.none,
+                        fontSize: 33)),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            Container(
+                padding: const EdgeInsets.all(22),
+                decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(20))),
+                width: screen.width * 0.9,
                 child: Form(
                   key: _formKey,
                   child: Column(
@@ -56,18 +99,18 @@ class _RegisterPageState extends State<RegisterPage> {
                     children: [
                       Text(
                         "Name",
-                        style: GoogleFonts.chewy(
+                        style: GoogleFonts.aBeeZee(
                             textStyle: const TextStyle(
-                                color: Color(0xFF6C5F57),
+                                color: Colors.black,
                                 decoration: TextDecoration.none,
-                                fontSize: 22)),
+                                fontSize: 16)),
                       ),
                       Container(
                         margin: const EdgeInsets.all(8),
                         padding: const EdgeInsets.only(left: 12, right: 12),
                         width: screen.width * 0.8,
                         decoration: const BoxDecoration(
-                            color: Color(0xFFCEB09D),
+                            color: Color(0x66FFAF65),
                             borderRadius:
                                 BorderRadius.all(Radius.circular(12))),
                         child: TextFormField(
@@ -84,17 +127,17 @@ class _RegisterPageState extends State<RegisterPage> {
                         ),
                       ),
                       Text("phone number",
-                          style: GoogleFonts.chewy(
+                          style: GoogleFonts.aBeeZee(
                               textStyle: const TextStyle(
-                                  color: Color(0xFF6C5F57),
+                                  color: Colors.black,
                                   decoration: TextDecoration.none,
-                                  fontSize: 22))),
+                                  fontSize: 16))),
                       Container(
                         margin: const EdgeInsets.all(8),
                         padding: const EdgeInsets.only(left: 12, right: 12),
                         width: screen.width * 0.8,
                         decoration: const BoxDecoration(
-                            color: Color(0xFFCEB09D),
+                            color: Color(0x66FFAF65),
                             borderRadius:
                                 BorderRadius.all(Radius.circular(12))),
                         child: TextFormField(
@@ -111,17 +154,17 @@ class _RegisterPageState extends State<RegisterPage> {
                         ),
                       ),
                       Text("email",
-                          style: GoogleFonts.chewy(
+                          style: GoogleFonts.aBeeZee(
                               textStyle: const TextStyle(
-                                  color: Color(0xFF6C5F57),
+                                  color: Colors.black,
                                   decoration: TextDecoration.none,
-                                  fontSize: 22))),
+                                  fontSize: 16))),
                       Container(
                         margin: const EdgeInsets.all(8),
                         padding: const EdgeInsets.only(left: 12, right: 12),
                         width: screen.width * 0.8,
                         decoration: const BoxDecoration(
-                            color: Color(0xFFCEB09D),
+                            color: Color(0x66FFAF65),
                             borderRadius:
                                 BorderRadius.all(Radius.circular(12))),
                         child: TextFormField(
@@ -138,17 +181,17 @@ class _RegisterPageState extends State<RegisterPage> {
                         ),
                       ),
                       Text("password",
-                          style: GoogleFonts.chewy(
+                          style: GoogleFonts.aBeeZee(
                               textStyle: const TextStyle(
-                                  color: Color(0xFF6C5F57),
+                                  color: Colors.black,
                                   decoration: TextDecoration.none,
-                                  fontSize: 22))),
+                                  fontSize: 16))),
                       Container(
                         margin: const EdgeInsets.all(8),
                         padding: const EdgeInsets.only(left: 12, right: 12),
                         width: screen.width * 0.8,
                         decoration: const BoxDecoration(
-                            color: Color(0xFFCEB09D),
+                            color: Color(0x66FFAF65),
                             borderRadius:
                                 BorderRadius.all(Radius.circular(12))),
                         child: TextFormField(
@@ -167,9 +210,12 @@ class _RegisterPageState extends State<RegisterPage> {
                     ],
                   ),
                 )),
+            SizedBox(
+              height: screen.height * 0.01,
+            ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFFCAAF9F)),
+                  backgroundColor: const Color(0xFFFFAF65)),
               onPressed: () async {
                 if (_formKey.currentState!.validate()) {
                   setState(() {
@@ -204,8 +250,6 @@ class _RegisterPageState extends State<RegisterPage> {
                     } else if (e.code == 'email-already-in-use') {
                       isRegis = 'The account already exists for that email.';
                     }
-                  } catch (e) {
-                    print('Error: ${e.toString()}');
                   }
 
                   setState(() {
@@ -257,9 +301,9 @@ class _RegisterPageState extends State<RegisterPage> {
               child: _loading
                   ? const CircularProgressIndicator()
                   : Text('SIGN UP',
-                      style: GoogleFonts.chewy(
+                      style: GoogleFonts.aBeeZee(
                           textStyle: const TextStyle(
-                              color: Color(0xFF6C5F57),
+                              color: Colors.black,
                               decoration: TextDecoration.none,
                               fontSize: 22))),
             ),
