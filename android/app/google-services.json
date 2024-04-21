@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "361387580374",
+    "project_id": "homehero-app-223be",
+    "storage_bucket": "homehero-app-223be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361387580374:android:0402fc3bdab255152b2277",
+        "android_client_info": {
+          "package_name": "com.example.homehero"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsqWDfu8-bdX-cdvo-fMCt9yUvx4qB35Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361387580374:android:dcf1cf31dca23b7e2b2277",
+        "android_client_info": {
+          "package_name": "com.example.homeheroApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsqWDfu8-bdX-cdvo-fMCt9yUvx4qB35Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
