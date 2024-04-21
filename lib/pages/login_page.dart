@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:homehero/pages/homepage.dart';
 import 'package:homehero/pages/register_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -186,7 +187,7 @@ class _LoginPageState extends State<LoginPage> {
                     Navigator.of(context).pushAndRemoveUntil(
                         MaterialPageRoute<void>(
                             builder: (BuildContext context) =>
-                                const LoginPage()),
+                                const HomePage()),
                         ModalRoute.withName('/'));
                   } else {
                     // ignore: use_build_context_synchronously
