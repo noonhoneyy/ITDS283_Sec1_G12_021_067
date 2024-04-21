@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:homehero/pages/homepage.dart';
 import 'package:homehero/pages/register_page.dart';
+import 'homepage.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -224,7 +225,7 @@ class _LoginPageState extends State<LoginPage> {
                   Navigator.of(context).pushAndRemoveUntil(
                       MaterialPageRoute<void>(
                           builder: (BuildContext context) =>
-                              const RegisterPage()),
+                              const HomePage()),
                       ModalRoute.withName('/'));
                 },
                 child: const Text(
